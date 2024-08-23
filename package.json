@@ -21,6 +21,7 @@
   "homepage": "https://hashsolutions.net",
   "scripts": {
     "predeploy": "npm run build",
+    "postbuild": "copy CNAME build\\CNAME",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
