@@ -28,7 +28,7 @@ const ContactUs = () => {
                             style={{ objectFit: 'cover', width: '100%' }}
                             height={200}
                             src={picture}
-                            alt='hena fi soret kalb'
+                            alt='alt'
                         />
                         : null
                 }
