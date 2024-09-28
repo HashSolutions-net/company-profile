@@ -1,0 +1,16 @@
+Version: 2.0.1
+Date:    08-02-2023
+=========================== 
+Updated: Minor issue fixed
+
+Version: 2.0.0
+Date:    10-09-2022
+=========================== 
+Updated: Update to react latest version
+Updated: Update to bootstrap latest version
+Updated: All other available plugins
+
+Version: 1.0.0
+Date:    25-03-2021 
+=========================== 
+Initial Release
