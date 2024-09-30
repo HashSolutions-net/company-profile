@@ -29,7 +29,11 @@
     "typewriter-effect": "^2.19.0",
     "vivus": "^0.4.6"
   },
+  "homepage": "https://hashsolutions.net",
   "scripts": {
+    "predeploy": "npm run build",
+    "postbuild": "node copy-cname.js",
+    "deploy": "gh-pages -d build",
     "start": "set PORT=3008 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -61,6 +65,7 @@
     "@babel/preset-react": "^7.18.6",
     "eslint": "^8.23.0",
     "eslint-plugin-react": "^7.22.0",
-    "sass": "^1.54.8"
+    "sass": "^1.54.8",
+    "gh-pages": "^6.1.1"
   }
 }
