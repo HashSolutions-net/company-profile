@@ -7,7 +7,6 @@
         font-size: 72px;
         line-height: 1.2;
         color: var(--clr-white);
-        margin-bottom: 40px;
         & > div {
             display: inline-block;
         }
@@ -16,6 +15,7 @@
     & .desc {
         max-width: 700px;
         margin: 0 auto;
+        margin-top: 40px;
 
         & p {
             font-size: 20px;
@@ -35,7 +35,6 @@
     } {
         & .title {
             font-size: 36px;
-            margin-bottom: 20px;
         }
 
         & .desc {
