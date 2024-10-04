@@ -1,0 +1,20 @@
+/*
+      object-assign
+      (c) Sindre Sorhus
+      @license MIT
+      */
+
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
+
+/**
+ * vivus - JavaScript library to make drawing animation on SVG
+ * @version v0.4.6
+ * @link https://github.com/maxwellito/vivus
+ * @license MIT
+ */
