@@ -1,7 +1,7 @@
 import {useEffect, useRef} from "react";
 import SectionTitle from '../../components/SectionTitles/SectionTitle';
-import {Link} from "react-router-dom";
 import Parallax from 'parallax-js';
+import { Link } from "react-scroll";
 
 const CallToAction = () => {
     const sceneEl = useRef(null);
@@ -23,11 +23,10 @@ const CallToAction = () => {
                         <div className="cta-content text-center">
                             <SectionTitle
                                 titleOption="color-light text-center mb-0"
-                                title="Let’s find out how to work together"
-                                subTitle="Ready to start your project? The contact information collected through
-                                this form will only be used to send a response to your inquiry."
+                                title="Do you have any inqueries ?"
+                                subTitle="Do not hesitate to contact us at any time and one of our representatives will follow up"
                             />
-                            <Link to={process.env.PUBLIC_URL + "/"} className="btn btn-primary btn-hover-secondary mt-6" data-aos="fade-up" data-aos-delay="300">Get Started</Link>
+                            <Link to='contact-us-sec' className="btn btn-primary btn-hover-secondary mt-6" data-aos="fade-up" data-aos-delay="300">Contact Us</Link>
                         </div>
                     </div>
                 </div>

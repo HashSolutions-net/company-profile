@@ -2,38 +2,28 @@ import React from 'react';
 import SEO from '../components/SEO';
 import Header from "../partials/header/Header";
 import IntroThree from '../container/IntroSlider/IntroThree';
-import HomeAboutThree from '../container/About/HomeAboutThree';
-import Funfact from '../container/Funfact/Funfact';
-import ServiceIconBox from '../container/service/ServiceIconBox';
-import Faq from '../container/Faq/Faq';
-import PortfolioTwo from '../container/Portfolio/PortfolioTwo';
-import Team from '../container/Team/Team';
-import TestimonialContainer from '../container/Testimonial/TestimonialContainer';
 import CallToAction from '../container/CallToAction/CallToAction';
-import HomeBlog from '../container/BlogGrid/HomeBlog';
-import ContactInformation from '../container/ContactInformation/ContactInformation';
-import BrandContainer from '../container/Brand/BrandContainer';
 import Footer from '../container/Footer/Footer';
 import ScrollToTop from '../components/ScrollToTop.jsx';
+import AboutFive from '../container/About/AboutFive.js';
+import ServiceIconBox from '../container/service/ServiceIconBox.js';
+import CallToActionTwo from '../container/CallToAction/CallToActionTwo.js';
+import ContactInformationThree from '../container/ContactInformation/ContactInformationThree.js';
+import HomeBlog from '../container/BlogGrid/HomeBlog.js';
 
 
 const HomeThree = () => {
     return (
         <React.Fragment>
-            <SEO title="Exomac || Home Three" />
+            <SEO title="Hash Solutions | Transformation to Digitalization" />
             <Header />
             <IntroThree />
-            <HomeAboutThree />
-            <Funfact classOption="section-padding bg-primary-blue"/>
-            <ServiceIconBox />
-            <Faq />
-            <PortfolioTwo />
-            <Team />
-            <TestimonialContainer />
-            <CallToAction />
+            <AboutFive />
             <HomeBlog />
-            <ContactInformation classOption="bg-primary-blue" />
-            <BrandContainer classOption="section-padding" />
+            <CallToAction />
+            <ServiceIconBox />
+            <CallToActionTwo />
+            <ContactInformationThree />
             <Footer />
             <ScrollToTop />
         </React.Fragment>

@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionTitle from '../../components/SectionTitles/SectionTitle';
-import {Link} from "react-router-dom";
+import { Link } from 'react-scroll';
 
 const CallToActionTwo = () => {
     return (
@@ -12,51 +12,51 @@ const CallToActionTwo = () => {
                     subTitle="Our team of designers, developers and creatives are perfectionists
                     who love what they do and love where they work"
                 />
-                <Link className="btn btn-primary btn-hover-secondary" to={process.env.PUBLIC_URL + "/contact"} data-aos="fade-up" data-aos-delay="300">Contact Us</Link>
+                <Link className="btn btn-primary btn-hover-secondary" to='contact-us-sec'>Contact Us</Link>
 
                 <div className="shape shape-1">
                     <span>
-                        <img src={process.env.PUBLIC_URL + "images/icon-animation/icon-1.png"} alt="" />
+                        <img src={process.env.PUBLIC_URL + "images/techs/html.png"} alt="" />
                     </span>
                 </div>
                 <div className="shape shape-2">
                     <span>
-                        <img src={process.env.PUBLIC_URL + "images/icon-animation/icon-2.png"} alt="" />
+                        <img src={process.env.PUBLIC_URL + "images/techs/typescript.png"} alt="" />
                     </span>
                 </div>
                 <div className="shape shape-3">
                     <span>
-                        <img src={process.env.PUBLIC_URL + "images/icon-animation/icon-3.png"} alt="" />
+                        <img src={process.env.PUBLIC_URL + "images/techs/css.png"} alt="" />
                     </span>
                 </div>
                 <div className="shape shape-4">
                     <span>
-                        <img src={process.env.PUBLIC_URL + "images/icon-animation/icon-4.png"} alt="" />
+                        <img src={process.env.PUBLIC_URL + "images/techs/react.png"} alt="" />
                     </span>
                 </div>
                 <div className="shape shape-5">
                     <span>
-                        <img src={process.env.PUBLIC_URL + "images/icon-animation/icon-5.png"} alt="" />
+                        <img src={process.env.PUBLIC_URL + "images/techs/ios.png"} alt="" />
                     </span>
                 </div>
                 <div className="shape shape-6">
                     <span>
-                        <img src={process.env.PUBLIC_URL + "images/icon-animation/icon-6.png"} alt="" />
+                        <img src={process.env.PUBLIC_URL + "images/techs/aws.png"} alt="" />
                     </span>
                 </div>
                 <div className="shape shape-7">
                     <span>
-                        <img src={process.env.PUBLIC_URL + "images/icon-animation/icon-7.png"} alt="" />
+                        <img src={process.env.PUBLIC_URL + "images/techs/c-sharp.png"} alt="" />
                     </span>
                 </div>
                 <div className="shape shape-8">
                     <span>
-                        <img src={process.env.PUBLIC_URL + "images/icon-animation/icon-8.png"} alt="" />
+                        <img src={process.env.PUBLIC_URL + "images/techs/sql.png"} alt="" />
                     </span>
                 </div>
                 <div className="shape shape-9">
                     <span>
-                        <img src={process.env.PUBLIC_URL + "images/icon-animation/icon-9.png"} alt="" />
+                        <img src={process.env.PUBLIC_URL + "images/techs/android.png"} alt="" />
                     </span>
                 </div>
             </div>

@@ -22,7 +22,6 @@ const IconBox = ({ data, classOption }) => {
                 <div className="desc">
                     <p>{data.desc}</p>
                 </div>
-                <Link to={data.link} className="link">{data.pageLink}</Link>
             </div>
         </div>
     )

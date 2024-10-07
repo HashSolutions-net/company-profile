@@ -6,12 +6,11 @@ import SectionTitle from '../../components/SectionTitles/SectionTitle';
 
 const HomeBlog =({ SectionBgColor }) => {
     return (
-        <div className={`section section-padding-t90-b100 ${SectionBgColor}`}>
+        <div id='why-us-sec' className={`section section-padding-t90-b100 ${SectionBgColor}`}>
             <div className="container">
                 <SectionTitle
-                    title="We are a full-service creative agency"
-                    subTitle="Our team of designers, developers and creatives are perfectionists
-                    who love what they do and love"
+                    title="Why Choose Us"
+                    subTitle=""
                 />
 
                 <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mb-n6">

@@ -1,44 +1,24 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 const NavBar = () => {
     return (
         <nav className="site-main-menu">
             <ul>
-                <li className="has-children">
-                    <NavLink to={process.env.PUBLIC_URL + "/"}><span className="menu-text">Homepage</span></NavLink>
-                    <span className="menu-toggle"><i className="far fa-angle-down"></i></span>
-                    <ul className="sub-menu">
-                        <li><NavLink to={process.env.PUBLIC_URL + "/home-one"}><span className="menu-text">Home One</span></NavLink></li>
-                        <li><NavLink to={process.env.PUBLIC_URL + "/home-two"}><span className="menu-text">Home Two</span></NavLink></li>
-                        <li><NavLink to={process.env.PUBLIC_URL + "/home-three"}><span className="menu-text">Home Three</span></NavLink></li>
-                    </ul>
+                <li>
+                    <Link to="home-sec" smooth={true} duration={500} className={{}}><span className="menu-text">Home</span></Link>
                 </li>
                 <li>
-                    <NavLink to={process.env.PUBLIC_URL + "/about"}><span className="menu-text">About Us</span></NavLink>
+                    <Link to="about-us-sec" smooth={true} duration={500} className={{}}><span className="menu-text">About Us</span></Link>
                 </li>
                 <li>
-                    <NavLink to={process.env.PUBLIC_URL + "/service"}><span className="menu-text">Services</span></NavLink>
-                </li>
-                <li className="has-children">
-                    <NavLink to={process.env.PUBLIC_URL + "/work"}><span className="menu-text">Work</span></NavLink>
-                    <span className="menu-toggle"><i className="far fa-angle-down"></i></span>
-                    <ul className="sub-menu">
-                        <li><NavLink to={process.env.PUBLIC_URL + "/work"}><span className="menu-text">Work</span></NavLink></li>
-                        <li><NavLink to={process.env.PUBLIC_URL + `/work-details/1`}><span className="menu-text">Work Details</span></NavLink></li>
-                    </ul>
-                </li>
-                <li className="has-children">
-                    <NavLink to={process.env.PUBLIC_URL + "/blog-grid"}><span className="menu-text">Blog</span></NavLink>
-                    <span className="menu-toggle"><i className="far fa-angle-down"></i></span>
-                    <ul className="sub-menu">
-                        <li><NavLink to={process.env.PUBLIC_URL + "/blog-grid"}><span className="menu-text">Blog Grid</span></NavLink></li>
-                        <li><NavLink to={process.env.PUBLIC_URL + "/blog-classic"}><span className="menu-text">Blog classic</span></NavLink></li>
-                        <li><NavLink to={process.env.PUBLIC_URL + `/blog-details/1`}><span className="menu-text">Blog Details</span></NavLink></li>
-                    </ul>
+                    <Link to="why-us-sec" smooth={true} duration={500} className={{}}><span className="menu-text">Why Us</span></Link>
                 </li>
                 <li>
-                    <NavLink to={process.env.PUBLIC_URL + "/contact"}><span className="menu-text">Contact Us</span></NavLink>
+                    <Link to="services-sec" smooth={true} duration={500} className={{}}><span className="menu-text">Services</span></Link>
+                </li>
+                <li>
+                    <Link to="contact-us-sec" smooth={true} duration={500} className={{}}><span className="menu-text">Contact Us</span></Link>
                 </li>
             </ul>
         </nav>

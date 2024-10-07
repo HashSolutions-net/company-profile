@@ -24,8 +24,7 @@ const IntroThree = () => {
                             </h2>
                             <h2 className="title ah-headline">brands &amp; experiences</h2>
                             <div className="desc">
-                                <p>We are an agency located in New York. We think strategy, craft design,
-                                    develop digital and create motion. To forward your brand and business.</p>
+                                <p>We transforms your ideas into real software and help you grow your business</p>
                             </div>
                         </div>
                     </div>

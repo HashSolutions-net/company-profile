@@ -6,13 +6,12 @@ import SectionTitle from '../../components/SectionTitles/SectionTitle';
 
 const ServiceIconBox = ({ classOption }) => {
     return (
-        <div className={`section section-padding-t90-b100 ${classOption}`}>
+        <div id="services-sec" className={`section section-padding-t90-b100 ${classOption}`}>
             <div className="container">
 
                 <SectionTitle
-                    title="We create a unique action plan for brands"
-                    subTitle="Get your company heading in the right direction with our digital
-                    marketing strategist"
+                    title="Our services"
+                    subTitle=""
                 />
 
                 <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mb-n6">

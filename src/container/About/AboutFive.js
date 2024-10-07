@@ -19,7 +19,7 @@ const AboutFive = () => {
 
     }, [])
     return (
-        <div className="section section-padding-top section-padding-bottom-180">
+        <div id="about-us-sec" className="section section-padding-top section-padding-bottom-180">
             <div className="container">
 
                 <div className="row">
@@ -47,13 +47,11 @@ const AboutFive = () => {
                     <div className="col-xl-5 col-lg-6 col-12" data-aos="fade-up" data-aos-delay="300">
                         <div className="about-content-area">
                             <SectionTitleTwo 
-                                subTitle="Our solutions begin with brand research"
-                                title="We’ve worked alongside plenty of brands &amp; startups"
+                                subTitle=""
+                                title="Vision"
                             />
 
-                            <p>Our team of designers and developers are perfectionists who love what they do – we thrive off pushing the boundaries of our clients’ expectations and our own capabilities.</p>
-
-                            <Link className="btn btn-primary btn-hover-secondary mt-xl-12 mt-lg-8 mt-md-6 mt-4" to={process.env.PUBLIC_URL + "/"}>Get Started</Link>
+                            <p>To be a global leader in delivering high-quality, cost-effective software solutions across diverse industries and customer segments. Leveraging our skilled talent, we aim to expand our reach from Egypt to Europe, MENA, and the USA. Our long-term vision is to transition into a product-based company, innovating and creating transformative digital products that drive the future of technology.</p>
                         </div>
                     </div>
 

@@ -1,25 +1,25 @@
 [
     {
         "id": "1",
-        "icon": "images/svg/linea/linea-basic-target.svg",
-        "title": "Branding",
-        "desc": "First impressions count! Make sure your brand works for you. We offer digital marketing.",
+        "icon": "images/svg/linea/linea-basic-world.svg",
+        "title": "Websites Development",
+        "desc": "We develop a user friendly websites that archives  your business needs",
         "pageLink": "Learn More",
         "link": "service"
     },
     {
         "id": "2",
-        "icon": "images/svg/linea/linea-basic-picture-multiple.svg",
-        "title": "UX Design",
-        "desc": "First impressions count! Make sure your brand works for you. We offer digital marketing.",
+        "icon": "images/svg/linea/linea-mobile-search.svg",
+        "title": "Mobile Development",
+        "desc": "For a perfect user experience, we create mobile applications on android , IOS",
         "pageLink": "Learn More",
         "link": "service"
     },
     {
         "id": "3",
-        "icon": "images/svg/linea/linea-basic-picture.svg",
-        "title": "Strategy",
-        "desc": "First impressions count! Make sure your brand works for you. We offer digital marketing.",
+        "icon": "images/svg/linea/linea-ecommerce-cart.svg",
+        "title": "Ecommerce Websites",
+        "desc": "You can grow you business by embracing your e-commerce shops",
         "pageLink": "Learn More",
         "link": "service"
     },

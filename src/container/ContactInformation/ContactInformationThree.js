@@ -19,7 +19,7 @@ const ContactInformationThree = () => {
 
     }, [])
     return (
-        <div className="section section-padding contact-section overlay-two" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg/contact-bg.jpg)`}}>
+        <div id="contact-us-sec" className="section section-padding contact-section overlay-two" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg/contact-bg.jpg)`}}>
 
             <div className="container">
                 <div className="row row-cols-lg-2 row-cols-1 align-items-center">
