@@ -6,7 +6,7 @@ const BlogItem = ({ data }) => {
     return (
         <div className="blog">
             <div className="thumbnail">
-            <Link to='' className="image"><img src={process.env.PUBLIC_URL + data.image} alt="why_us" /></Link>
+                <Link to='' className="image"><img style={{ cursor: 'default' }} src={process.env.PUBLIC_URL + data.image} alt="why_us" /></Link>
             </div>
             <div className="info">
                 <h3 className="title">{data.title}</h3>
