@@ -12,7 +12,7 @@ const CallToActionTwo = () => {
                     subTitle="Our team of designers, developers and creatives are perfectionists
                     who love what they do and love where they work"
                 />
-                <Link className="btn btn-primary btn-hover-secondary" to='contact-us-sec'>Contact Us</Link>
+                <Link smooth={true} duration={500} className="btn btn-primary btn-hover-secondary" to='contact-us-sec'>Contact Us</Link>
 
                 <div className="shape shape-1">
                     <span>
