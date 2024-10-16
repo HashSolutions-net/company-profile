@@ -1,11 +1,21 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { useForm } from "react-hook-form";
 
 const ProjectForm = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm({
+    const [loading, setLoading] = useState(false);
+    const [success, setSuccess] = useState(null);
+    const [error, setError] = useState(null);
+
+    const { register, handleSubmit, formState: { errors }, reset } = useForm({
         mode: "onBlur"
     });
+
+
     const onSubmit = (data = {}) => {
+        setLoading(true);
+        setSuccess(null);
+        setError(null);
+
         fetch('https://frolicking-profiterole-4dc7fd.netlify.app/.netlify/functions/sender', {
             method: 'POST',
             headers: {
@@ -18,8 +28,19 @@ const ProjectForm = () => {
             }),
         })
             .then(response => response.json())
-            .then(data => console.log('Success:', data))
-            .catch(error => console.error('Error:', error));
+            .then(() => {
+                setLoading(false);
+                setSuccess("Your message has been sent! We'll get back to you shortly.");
+                reset();
+
+                setTimeout(() => {
+                    setSuccess(null);
+                }, 7000);
+            })
+            .catch(() => {
+                setLoading(false);
+                setError("Failed to send the message. Please try again.");
+            });
     };
 
     return (
@@ -46,7 +67,7 @@ const ProjectForm = () => {
                                 required: "Email is required",
                                 pattern: {
                                     value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                                    message: "invalid email address",
+                                    message: "Invalid email address",
                                 },
                             })}
                         />
@@ -63,13 +84,33 @@ const ProjectForm = () => {
                         {errors?.message && <p>{errors.message?.message}</p>}
                     </div>
                     <div className="col-12 text-center mb-4">
-                        <button type="submit" className="btn btn-primary btn-hover-secondary">Get a free consultation</button>
+                        <button
+                            type="submit"
+                            className="btn btn-primary btn-hover-secondary"
+                            disabled={loading}
+                        >
+                            {loading ? (
+                                <span>Sending your message...</span>
+                            ) : (
+                                <span>Get a free consultation</span>
+                            )}
+                        </button>
                     </div>
                 </div>
             </form>
-            <p className="form-messege"></p>
+
+            {success && (
+                <p className="form-message" style={{ color: '#4caf50', marginTop: '8px', textAlign: 'center', fontWeight: 'bold' }}>
+                    {success}
+                </p>
+            )}
+            {error && (
+                <p className="form-message" style={{ color: '#f44336', marginTop: '8px', textAlign: 'center', fontWeight: 'bold' }}>
+                    {error}
+                </p>
+            )}
         </Fragment>
-    )
+    );
 }
 
 export default ProjectForm;
