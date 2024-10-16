@@ -28,7 +28,7 @@ const ContactInformationThree = () => {
                             <SectionTitleTwo 
                                 classOption="color-light"
                                 subTitle="Innovative & cutting-edge technology"
-                                title="We use latest technologies that are proven and practical"
+                                title="We’d love to hear from you! Whether you have a project in mind, want to learn more about our services, or just need some advice, our team is here to help."
                             />
 
                             {contactDataTwo && contactDataTwo.map((single, key) => {
