@@ -13,7 +13,7 @@ import HomeBlog from '../container/BlogGrid/HomeBlog.js';
 
 const aboutUsProps = {
     vision: {
-        title: "Amino is Here",
+        title: "Vision",
         content: "To be a global leader in delivering high-quality, cost-effective software solutions across diverse industries. Leveraging our skilled talent, we aim to expand from Egypt to Europe, MENA, and the USA. Our long-term vision is to evolve into a product-based company, driving innovation with transformative digital products that shape the future of technology.",
         isContentRight: true
     },
