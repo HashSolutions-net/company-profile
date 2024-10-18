@@ -5,13 +5,24 @@ import IntroThree from '../container/IntroSlider/IntroThree';
 import CallToAction from '../container/CallToAction/CallToAction';
 import Footer from '../container/Footer/Footer';
 import ScrollToTop from '../components/ScrollToTop.jsx';
-import AboutFive from '../container/About/AboutFive.js';
-import Mission from '../container/About/Mission.js';
+import AboutFive from '../container/About/AboutUs.js';
 import ServiceIconBox from '../container/service/ServiceIconBox.js';
 import CallToActionTwo from '../container/CallToAction/CallToActionTwo.js';
 import ContactInformationThree from '../container/ContactInformation/ContactInformationThree.js';
 import HomeBlog from '../container/BlogGrid/HomeBlog.js';
 
+const aboutUsProps = {
+    vision: {
+        title: "Vision",
+        content: "To be a global leader in delivering high-quality, cost-effective software solutions across diverse industries. Leveraging our skilled talent, we aim to expand from Egypt to Europe, MENA, and the USA. Our long-term vision is to evolve into a product-based company, driving innovation with transformative digital products that shape the future of technology.",
+        isContentRight: true
+    },
+    mission: {
+        title: "Mission",
+        content: "At Hash Solutions, our mission is to empower businesses by delivering innovative, high-quality software solutions that solve real-world challenges. We strive to turn our clients' visions into reality through collaboration, technical expertise, and a commitment to excellence. Our goal is to drive business growth and innovation, one project at a time.",
+        isContentRight: false
+    }
+}
 
 const HomeThree = () => {
     return (
@@ -19,8 +30,16 @@ const HomeThree = () => {
             <SEO title="Hash Solutions | Transformation to Digitalization" />
             <Header />
             <IntroThree />
-            <AboutFive />
-            <Mission />
+            {
+                Object.keys(aboutUsProps).map((key) => {
+                    const {
+                        title, content, isContentRight
+                    } = aboutUsProps[key];
+                    return (
+                        <AboutFive key={key} title={title} content={content} isContentRight={isContentRight} />
+                    );
+                })
+            }
             <HomeBlog />
             <CallToAction />
             <ServiceIconBox />
@@ -31,7 +50,6 @@ const HomeThree = () => {
         </React.Fragment>
     )
 }
-
 export default HomeThree;
 
 
