@@ -27,4 +27,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: yarn install --frozen-lockfile
+
+        # Set up a dummy Git user identity for the deployment
+    - name: Configure Git (Dummy Account)
+      run: |
+        git config --global user.email "actions@github.com"
+        git config --global user.name "github-actions[bot]"
+        
     - run: CI=false npm run deploy
