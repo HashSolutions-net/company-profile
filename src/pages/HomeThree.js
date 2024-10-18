@@ -6,6 +6,7 @@ import CallToAction from '../container/CallToAction/CallToAction';
 import Footer from '../container/Footer/Footer';
 import ScrollToTop from '../components/ScrollToTop.jsx';
 import AboutFive from '../container/About/AboutFive.js';
+import Mission from '../container/About/Mission.js';
 import ServiceIconBox from '../container/service/ServiceIconBox.js';
 import CallToActionTwo from '../container/CallToAction/CallToActionTwo.js';
 import ContactInformationThree from '../container/ContactInformation/ContactInformationThree.js';
@@ -19,6 +20,7 @@ const HomeThree = () => {
             <Header />
             <IntroThree />
             <AboutFive />
+            <Mission />
             <HomeBlog />
             <CallToAction />
             <ServiceIconBox />
