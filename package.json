@@ -36,7 +36,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "postbuild": "node copy-cname.js",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages  -d build --repo https://x-access-token:${GITHUB_TOKEN}@github.com/HashSolutions-net/company-profile.git",
     "start": "set PORT=3008 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
