@@ -201,7 +201,7 @@ svg:not(:root) {
         bottom: 0;
         left: 0;
         z-index: -1;
-        background: linear-gradient(to right,  rgba(3,15,39,0.7) 0%,rgba(3,15,39,0) 100%); 
+        background: radial-gradient(circle, rgba(3, 15, 39, 0.4) 10%, rgba(3, 15, 39, 0.7) 90%);
     }
 }
 .overlay-two{

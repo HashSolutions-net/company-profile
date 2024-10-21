@@ -131,6 +131,7 @@
     p{
         max-width: 420px;
         margin-bottom: 0;
+        line-height: 2.4;
         // Responsive
         @media #{$tablet-device}{
             max-width: 100%;

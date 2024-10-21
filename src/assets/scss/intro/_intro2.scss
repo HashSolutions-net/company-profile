@@ -4,7 +4,7 @@
     max-width: 760px;
     margin: 0 auto;
     & .title {
-        font-size: 72px;
+        font-size: 58px;
         line-height: 1.2;
         color: var(--clr-white);
         & > div {
@@ -18,7 +18,7 @@
         margin-top: 40px;
 
         & p {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 500;
             line-height: 1.67;
             color: var(--clr-white);
@@ -34,7 +34,7 @@
     $large-mobile
     } {
         & .title {
-            font-size: 36px;
+            font-size: 44px;
         }
 
         & .desc {
@@ -50,7 +50,7 @@
     @media #{$extra-small-mobile} {
 
         & .title {
-            font-size: 30px;
+            font-size: 38px;
         }
 
         & .desc {

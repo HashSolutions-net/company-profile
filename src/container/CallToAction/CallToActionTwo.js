@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 
 const CallToActionTwo = () => {
     return (
-        <div className="cta-section section section-padding-250">
+        <div className="cta-section section section-padding-t110-b120 section-padding-bottom-180">
             <div className="container text-center icon-up-down-animation">
                 <SectionTitle
                     headingOption="fz-34"

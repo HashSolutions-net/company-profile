@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap');
 :root {
     // Colors
     --clr-border: #F3F3F3;
@@ -7,6 +8,7 @@
     --clr-primary: #1292ee;
     --clr-primary-two: #3a7e69;
     --clr-primary-three: #ef6f31;
+    --cursor-color: #fff;
     --clr-secondary: #748494;
     --clr-secondary-light: #8C89A2;
     --clr-secondary-three: #6ac5f1;
@@ -39,8 +41,9 @@
 
     // Font Family
     --ff-mulish: 'Mulish', sans-serif;
-    --ff-body: var(--ff-mulish);
-    --ff-heading: var(--ff-mulish);
+    --ff-spline: "Spline Sans", sans-serif;
+    --ff-body: var(--ff-spline);
+    --ff-heading: var(--ff-spline);
     --ff-link: 'Rubik', sans-serif;
 
     // Icon Font
