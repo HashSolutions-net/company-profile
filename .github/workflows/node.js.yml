@@ -36,6 +36,7 @@ jobs:
 
    # Authenticate with GITHUB_TOKEN to allow pushing to gh-pages
     - name: Deploy to GitHub Pages
+      if: contains('refs/heads/main', github.ref)
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GitHub provides this token automatically
       run: CI=false npm run deploy
