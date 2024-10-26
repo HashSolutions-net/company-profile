@@ -15,7 +15,7 @@ const IntroThree = () => {
                             <h2 className="title ah-headline">Empowering Your Business with {" "}
                                 <Typewriter
                                     options={{
-                                        strings: ["Innovative"],
+                                        strings: ["Innovative","Robust","Reliable"],
                                         autoStart: true,
                                         loop: true,
                                         deleteSpeed: 110
