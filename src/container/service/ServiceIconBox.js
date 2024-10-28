@@ -10,7 +10,7 @@ const ServiceIconBox = ({ classOption }) => {
             <div className="container">
 
                 <SectionTitle
-                    title="Our services"
+                    title="Our Services"
                     subTitle=""
                 />
 
