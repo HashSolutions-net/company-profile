@@ -9,7 +9,6 @@ import AboutFive from '../container/About/AboutUs.js';
 import ServiceIconBox from '../container/service/ServiceIconBox.js';
 import CallToActionTwo from '../container/CallToAction/CallToActionTwo.js';
 import ContactInformationThree from '../container/ContactInformation/ContactInformationThree.js';
-import HomeBlog from '../container/BlogGrid/HomeBlog.js';
 
 const aboutUsProps = {
     vision: {
@@ -40,7 +39,6 @@ const HomeThree = () => {
                     );
                 })
             }
-            <HomeBlog />
             <CallToAction />
             <ServiceIconBox />
             <CallToActionTwo />

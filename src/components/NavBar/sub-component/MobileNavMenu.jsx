@@ -12,9 +12,6 @@ const MobileNavMenu = () => {
                     <Link to="about-us-sec" smooth={true} duration={500} className={{}}><span className="menu-text">About Us</span></Link>
                 </li>
                 <li>
-                    <Link to="why-us-sec" smooth={true} duration={500} className={{}}><span className="menu-text">Why Us</span></Link>
-                </li>
-                <li>
                     <Link to="services-sec" smooth={true} duration={500} className={{}}><span className="menu-text">Services</span></Link>
                 </li>
                 <li>
