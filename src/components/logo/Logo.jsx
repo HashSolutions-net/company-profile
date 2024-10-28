@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
 import React from 'react';
-import {Link} from "react-router-dom";
+import { Link } from 'react-scroll';
 
 
-const Logo = ({image}) => {
-    return(
+const Logo = ({ image }) => {
+    return (
         <div className="header-logo">
-            <Link to={process.env.PUBLIC_URL + "/"}>
+            <Link to="home-sec" smooth={true} duration={500}>
                 <img className="dark-logo" src={process.env.PUBLIC_URL + image} alt="Agency Logo" />
             </Link>
         </div>
