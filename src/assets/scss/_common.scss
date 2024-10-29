@@ -26,6 +26,7 @@
 *::after,
 *::before {
     box-sizing: border-box;
+    cursor: none;
 }
 
 html,
@@ -33,7 +34,22 @@ body,
 .site-wrapper {
     height: 100%;
 }
-
+.custom-cursor {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+    color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    transition: transform 0.15s ease-out;
+    mix-blend-mode: difference;
+    z-index: 99999;
+}
 body {
     font-family: var(--ff-body);
     font-size: 16px;
