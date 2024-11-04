@@ -14,27 +14,26 @@ const ServiceIconBox = ({ classOption }) => {
                     subTitle=""
                 />
 
-                <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mb-n6">
-
-                    {IconBoxData && IconBoxData.slice(0, 3).map((single, key) => {
-                            return(
-                                <div key={key} className="col mb-6" data-aos="fade-up">
-                                    <IconBox classOption="box-border" data={single} key={key} />
-                                </div>
-                            ); 
+                <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mb-n6 justify-content-center">
+                    {IconBoxData && IconBoxData.slice(0, 5).map((single, key) => {
+                        return (
+                            <div key={key} className="col mb-6" data-aos="fade-up">
+                                <IconBox classOption="box-border" data={single} key={key} />
+                            </div>
+                        );
                     })}
 
                 </div>
 
             </div>
-        </div>
+        </div >
     )
 }
 
 ServiceIconBox.propTypes = {
     classOption: PropTypes.string
-  };
-  ServiceIconBox.defaultProps = {
+};
+ServiceIconBox.defaultProps = {
     classOption: "section section-padding-t90-b100"
 };
 
