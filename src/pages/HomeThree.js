@@ -26,7 +26,7 @@ const aboutUsProps = {
 const HomeThree = () => {
     return (
         <React.Fragment>
-            <SEO title="Hash Solutions | Transformation to Digitalization" />
+            <SEO title="Hash Solutions – Software Solutions Services" />
             <Header />
             <IntroThree />
             {
