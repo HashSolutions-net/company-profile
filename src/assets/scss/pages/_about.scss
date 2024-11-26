@@ -142,10 +142,10 @@
     }
     // Responsive
     @media #{$tablet-device}{
-        margin-top: 150px;
+        //margin-top: 150px;
     }
     @media #{$large-mobile}{
-        margin-top: 150px;
+       // margin-top: 150px;
     }
 }
 
@@ -239,4 +239,10 @@
     p{
         margin-bottom: 20px;
     }
+}
+
+.aboutUsSec{
+    @media #{$tablet-device}, #{$large-mobile}, #{$small-mobile}, #{$extra-small-mobile} {
+        flex-direction: column-reverse;
+      }
 }

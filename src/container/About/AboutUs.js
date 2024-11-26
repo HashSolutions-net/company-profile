@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
 import Parallax from 'parallax-js';
 
-const AboutUs = ({ title, content, isContentRight }) => {
+const AboutUs = ({ title, content, isContentRight, imageOnePath, imageTwoPath, paddingBottom }) => {
     const [scale] = useState(1.04);
     const sceneEl = useRef(null);
 
@@ -19,20 +19,22 @@ const AboutUs = ({ title, content, isContentRight }) => {
 
     }, [])
     return (
-        <div id="about-us-sec" className="section section-padding-top section-padding-bottom-180">
+        <div id="about-us-sec" className="section section-padding-top" style={{
+            paddingBottom
+        }}>
             <div className="container">
                 {
-                    isContentRight ? (<div className="row">
+                    isContentRight ? (<div className="row aboutUsSec">
                         <div className="col-xl-7 col-lg-6 col-12" data-aos="fade-up">
                             <div className="about-image-area">
                                 <div className="about-image">
                                     <Tilt scale={scale} transitionSpeed={4000}>
-                                        <img src={process.env.PUBLIC_URL + "images/about/about-3.jpg"} alt="" />
+                                        <img src={process.env.PUBLIC_URL + imageOnePath} alt="" />
                                     </Tilt>
                                 </div>
                                 <div className="about-image">
                                     <Tilt scale={scale} transitionSpeed={4000}>
-                                        <img src={process.env.PUBLIC_URL + "images/about/about-4.jpg"} alt="" />
+                                        <img src={process.env.PUBLIC_URL + imageTwoPath} alt="" />
                                     </Tilt>
                                 </div>
 
@@ -69,12 +71,12 @@ const AboutUs = ({ title, content, isContentRight }) => {
                             <div className="about-image-area">
                                 <div className="about-image">
                                     <Tilt scale={scale} transitionSpeed={4000}>
-                                        <img src={process.env.PUBLIC_URL + "images/about/about-3.jpg"} alt="" />
+                                        <img src={process.env.PUBLIC_URL + imageOnePath} alt="" />
                                     </Tilt>
                                 </div>
                                 <div className="about-image">
                                     <Tilt scale={scale} transitionSpeed={4000}>
-                                        <img src={process.env.PUBLIC_URL + "images/about/about-4.jpg"} alt="" />
+                                        <img src={process.env.PUBLIC_URL + imageTwoPath} alt="" />
                                     </Tilt>
                                 </div>
 
